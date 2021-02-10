@@ -1,0 +1,10 @@
+query products {
+    products {
+        id
+        name
+        url
+        image_src
+        price
+        club_price
+    }
+}

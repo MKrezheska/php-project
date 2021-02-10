@@ -1,0 +1,12 @@
+query ($resolution: String!, $display: String!, $processor: String!, $memory: String!, $internal_memory: String!, $graphics_card: String!, $page: Int!){
+    filter(resolution: $resolution, display: $display, processor: $processor, memory: $memory, internal_memory: $internal_memory, graphics_card: $graphics_card, page: $page) {
+        data {
+            name
+            price
+            club_price
+            url
+            image_src
+        }
+        total
+    }
+}
